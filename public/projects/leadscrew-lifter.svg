@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" fill="#111922"/>
+  <rect x="0.5" y="0.5" width="639" height="359" stroke="#3dd6c6" stroke-opacity="0.12"/>
+  <rect x="260" y="60" width="120" height="220" rx="6" fill="#17202b" stroke="#8fa3b8" stroke-opacity="0.35"/>
+  <path d="M320 80 L320 260" stroke="#3dd6c6" stroke-width="6"/>
+  <path d="M305 100 H335 M305 130 H335 M305 160 H335 M305 190 H335 M305 220 H335 M305 250 H335" stroke="#3dd6c6" stroke-width="2" opacity="0.7"/>
+  <rect x="200" y="240" width="240" height="24" rx="4" fill="#17202b" stroke="#3dd6c6" stroke-opacity="0.4"/>
+  <circle cx="320" cy="72" r="28" fill="#17202b" stroke="#3dd6c6" stroke-width="2"/>
+  <path d="M308 72 L332 72 M320 60 L320 84" stroke="#3dd6c6" stroke-width="2"/>
+  <text x="32" y="48" fill="#3dd6c6" font-family="monospace" font-size="14" letter-spacing="2">275 N � 6 MM/S</text>
+  <text x="32" y="320" fill="#8fa3b8" font-family="sans-serif" font-size="13">Leadscrew lifting machine � ME Design</text>
+</svg>
