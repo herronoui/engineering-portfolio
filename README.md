@@ -1,33 +1,33 @@
-# Engineering Portfolio — Herron Hà-Vi Nguyen
+# Engineering Portfolio | Herron Hà-Vi Nguyen
 
-Personal portfolio for robotics, control, and mechanical engineering work. Two frontends share the same project narrative: a zero-build static site for quick demos, and a Next.js app for a full interactive experience.
+My personal portfolio showcasing robotics, control systems, and mechanical engineering projects. There are two ways to view it: a simple static site you can open instantly, and a full Next.js app with animations and interactivity.
 
-**Live profile:** [github.com/herronoui](https://github.com/herronoui) · [LinkedIn](https://www.linkedin.com/in/herronnguyen)
+**Find me:** [github.com/herronoui](https://github.com/herronoui) · [LinkedIn](https://www.linkedin.com/in/herronnguyen) · [Reading list & robotics news](https://herronoui.github.io/reading-resources)
 
 ---
 
-## Quick start (static site — recommended for demos)
+## Quick start (static site, best for demos)
 
-No install or build step. Open the split project viewer in any browser:
+No install needed. Just open the project viewer in your browser:
 
 ```bash
 open index.html
 ```
 
-Or serve locally:
+Or spin up a local server:
 
 ```bash
 python3 -m http.server 8080
-# → http://localhost:8080
+# visit http://localhost:8080
 ```
 
-**Edit project content:** `content/projects-data.js` — sections, metrics, embedded PDFs, and HTML write-ups load immediately on refresh.
+**Want to edit projects?** Update `content/projects-data.js` and refresh. Sections, metrics, PDFs, and write-ups all load automatically.
 
 ---
 
 ## Next.js app (optional)
 
-Modern React portfolio with Framer Motion animations, typed data layer, and Tailwind CSS v4.
+A React-powered version of the portfolio with Framer Motion animations, a typed data layer, and Tailwind CSS v4.
 
 ```bash
 npm install
@@ -36,11 +36,11 @@ npm run build  # production build
 npm run lint   # ESLint
 ```
 
-**Edit structured data:** `src/data/portfolio.ts` — profile, projects, experience, and skills.
+**Edit structured data** in `src/data/portfolio.ts` (profile, projects, experience, and skills).
 
 ---
 
-## Repository structure
+## Repo structure
 
 ```
 engineering-portfolio/
@@ -65,14 +65,14 @@ engineering-portfolio/
 
 ## Featured work
 
-| Project | Focus | Context |
+| Project | What it is | Where / When |
 | --- | --- | --- |
-| **Magic Chair** | Soft pneumatic patient-transfer robot | CHARM Lab — fabrication, instrumentation, pressure characterization |
-| **TouchWorld** | Haptic exploration of AI-generated 3D worlds | ME327 — dual-mesh architecture, 1 kHz haptic loop |
-| **Bayesian Multi-Object Tracking** | UKF + Hungarian association under uncertainty | AA 273 — autonomous racing, Monte Carlo chance constraints |
-| **Leadscrew Lifting Machine** | Motor-driven lift rated 275 N @ 6 mm/s | ME Design — FEA-validated 150:1 drivetrain |
-| **GaN MEMS Characterization** | Process parameter sweeps & nonlinear effects | ISEP Paris research internship |
-| **GD&T QC Pipeline** | Manufacturing inspection at scale | TBrain AI — 550+ drawings, 40% misclassification reduction |
+| **Magic Chair** | Soft pneumatic patient-transfer robot | CHARM Lab (fabrication, instrumentation, pressure characterization) |
+| **TouchWorld** | Haptic exploration of AI-generated 3D worlds | ME327 (dual-mesh architecture, 1 kHz haptic loop) |
+| **Bayesian Multi-Object Tracking** | UKF + Hungarian association under uncertainty | AA 273 (autonomous racing, Monte Carlo chance constraints) |
+| **Leadscrew Lifting Machine** | Motor-driven lift rated 275 N @ 6 mm/s | ME Design (FEA-validated 150:1 drivetrain) |
+| **GaN MEMS Characterization** | Process parameter sweeps and nonlinear effects | ISEP Paris research internship |
+| **GD&T QC Pipeline** | Manufacturing inspection at scale | TBrain AI (550+ drawings, 40% misclassification reduction) |
 
 ---
 
@@ -83,7 +83,7 @@ engineering-portfolio/
 | UI | Vanilla HTML/CSS/JS | React 19, Tailwind CSS 4 |
 | Motion | CSS transitions | Framer Motion |
 | Icons | Inline SVG | Lucide React |
-| Framework | — | Next.js 15 (App Router) |
+| Framework | None | Next.js 15 (App Router) |
 | Language | JavaScript | TypeScript |
 
 ---
@@ -94,16 +94,16 @@ engineering-portfolio/
 
 Each entry in `window.PORTFOLIO_PROJECTS` supports:
 
-- `sections` — titled blocks with `body` and/or `items`
-- `embed.type: "pdf"` — inline PDF (place files under `public/docs/`)
-- `embed.type: "html"` — embedded technical write-ups
+- `sections`: titled blocks with `body` and/or `items`
+- `embed.type: "pdf"`: inline PDF (put files in `public/docs/`)
+- `embed.type: "html"`: embedded technical write-ups
 - `metrics`, `tags`, `team`, `category`, `image`
 
-See `content/README.md` for the full schema.
+Check out `content/README.md` for the full schema.
 
 ### Next.js app (`src/data/portfolio.ts`)
 
-Exports typed `profile`, `projects`, `experience`, and `skills` arrays consumed by React components. Keep highlights concise and metrics quantified where possible.
+Exports typed `profile`, `projects`, `experience`, and `skills` arrays used by the React components. Keep highlights short and quantify metrics when you can.
 
 ---
 
@@ -111,12 +111,12 @@ Exports typed `profile`, `projects`, `experience`, and `skills` arrays consumed 
 
 - **Project images:** `public/projects/*.svg`
 - **PDF decks:** `public/docs/` (e.g. Magic Chair deck)
-- **Resume:** `public/resume/Herron_Nguyen_Resume.pdf` (referenced by Next.js app)
+- **Resume:** `public/resume/Herron_Nguyen_Resume.pdf` (used by the Next.js app)
 
-Add binary assets locally; large PDFs may be gitignored if you prefer Git LFS or external hosting.
+You can add binary assets locally. For large PDFs, consider Git LFS or external hosting.
 
 ---
 
 ## License
 
-Private portfolio — all rights reserved unless otherwise noted for third-party assets (fonts, embedded project links).
+Private portfolio. All rights reserved unless otherwise noted for third-party assets (fonts, embedded project links).
